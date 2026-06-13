@@ -1,0 +1,35 @@
+{
+  "resources": [
+    {
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod",
+      "name": "rg-prod",
+      "type": "Microsoft.Resources/resourceGroups",
+      "location": "eastus",
+      "tags": {
+        "env": "production",
+        "owner": "platform"
+      },
+      "properties": {}
+    },
+    {
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod/providers/Microsoft.Storage/storageAccounts/stlogsprod",
+      "name": "stlogsprod",
+      "type": "Microsoft.Storage/storageAccounts",
+      "location": "eastus",
+      "tags": {
+        "env": "prod"
+      },
+      "properties": {
+        "account_tier": "Premium"
+      }
+    },
+    {
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-prod/providers/Microsoft.KeyVault/vaults/kv-unmanaged",
+      "name": "kv-unmanaged",
+      "type": "Microsoft.KeyVault/vaults",
+      "location": "eastus",
+      "tags": {},
+      "properties": {}
+    }
+  ]
+}
